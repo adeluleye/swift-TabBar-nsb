@@ -19,15 +19,12 @@ class MainTabBarController: UITabBarController {
     
     func setupTabBar() {
         
-        let videoViewController = UINavigationController(rootViewController: VideoViewController())
-        videoViewController.tabBarItem.image = UIImage(named: "video_black")?.withRenderingMode(.alwaysOriginal)
-        videoViewController.tabBarItem.selectedImage = UIImage(named: "video_white")?.withRenderingMode(.alwaysOriginal)
+        let videoController = createNavController(vc: VideoViewController(), selected: UIImage(named: "video_white"), unselected: UIImage(named: "video_black"))
         
-        let favoriteViewController = UINavigationController(rootViewController: FavoriteViewController())
-        favoriteViewController.tabBarItem.image = UIImage(named: "star_black")?.withRenderingMode(.alwaysOriginal)
-        favoriteViewController.tabBarItem.selectedImage = UIImage(named: "star_white")?.withRenderingMode(.alwaysOriginal)
+        let favoriteController = createNavController(vc: FavoriteViewController(), selected: UIImage(named: "star_white"), unselected: UIImage(named: "star_black"))
         
-        viewControllers = [videoViewController, favoriteViewController]
+        
+        viewControllers = [videoController, favoriteController]
         
         guard let items = tabBar.items else { return }
         
@@ -40,11 +37,11 @@ class MainTabBarController: UITabBarController {
 
 extension UITabBarController {
     
-    func createNavController(vc: UIViewController, selectedImage: UIImage, unselectedImage: UIImage) -> UINavigationController {
+    func createNavController(vc: UIViewController, selected: UIImage?, unselected: UIImage?) -> UINavigationController {
         let viewController = vc
         let navController = UINavigationController(rootViewController: viewController)
-        navController.tabBarItem.image = unselectedImage
-        navController.tabBarItem.selectedImage = selectedImage
+        navController.tabBarItem.image = unselected?.withRenderingMode(.alwaysOriginal)
+        navController.tabBarItem.selectedImage = selected?.withRenderingMode(.alwaysOriginal)
         
         return navController
     }
