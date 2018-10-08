@@ -13,6 +13,7 @@
 		E91B1083216B8BA400205EC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B1081216B8BA400205EC4 /* LaunchScreen.storyboard */; };
 		E91B108B216B8CE300205EC4 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B108A216B8CE300205EC4 /* VideoViewController.swift */; };
 		E91B108D216B8CFF00205EC4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B108C216B8CFF00205EC4 /* FavoriteViewController.swift */; };
+		E91B108F216BBD5700205EC4 /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B108E216BBD5700205EC4 /* UITabBarController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E91B1084216B8BA400205EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91B108A216B8CE300205EC4 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		E91B108C216B8CFF00205EC4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		E91B108E216BBD5700205EC4 /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E91B1077216B8BA300205EC4 /* TabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E91B108E216BBD5700205EC4 /* UITabBarController+Extension.swift */,
 				E91B1078216B8BA300205EC4 /* AppDelegate.swift */,
 				E91B107A216B8BA300205EC4 /* MainTabBarController.swift */,
 				E91B108A216B8CE300205EC4 /* VideoViewController.swift */,
@@ -140,6 +143,7 @@
 				E91B107B216B8BA300205EC4 /* MainTabBarController.swift in Sources */,
 				E91B1079216B8BA300205EC4 /* AppDelegate.swift in Sources */,
 				E91B108D216B8CFF00205EC4 /* FavoriteViewController.swift in Sources */,
+				E91B108F216BBD5700205EC4 /* UITabBarController+Extension.swift in Sources */,
 				E91B108B216B8CE300205EC4 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
